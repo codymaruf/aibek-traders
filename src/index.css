@@ -9,4 +9,10 @@
     --color-aibek-navy: #0b132b;
     --color-green-500: #152116;
     --color-green-300: #2c372d;
+    --color-dexen-blue: #17354F;
+    --color-aibek-gray: #F3F3F3;
+
+    --font-roboto: "Roboto", sans-serif; 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');

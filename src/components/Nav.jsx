@@ -4,8 +4,17 @@ const Nav = () => {
    const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const menuItems = [
+    {text: "Home", id: "home"},
+    {text: "About", id: "about"},
+    {text: "Services", id: "services"},
+    {text: "Latest Projects", id: "latest-projects"},
+    {text: "Contact Us", id: "contact-us"}
+  ]
+
   return (
-    <section>
+    <section id="home">
       
       <nav className="bg-white shadow-md py-4 pr-4">
       {/* Logo */}
@@ -54,10 +63,10 @@ const Nav = () => {
     sm:relative flex flex-col sm:flex-row sm:justify-between sm:items-center 
     transition-all duration-200 ease-in-out sm:overflow-visible overflow-hidden`}
       >
-        {["Home", "About", "Services", "latest Projects", "Contact Us"].map((text) => (
+        {menuItems.map(({text, id}) => (
     <a
-      key={text}
-      href={`#${text.toLowerCase()}`}
+      key={id}
+      href={`#${id}`}
       
       className=" px-4 py-2 text-aibek-cyan hover:text-sky-blue font-bold hover:underline transition duration-300 ease-in-out relative z-50"
     >
